@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Register</title>
+</head>
+
+<body>
+    <form method="POST" action="http://127.0.0.1:3000/create">
+        <div class="container">
+            <link rel="stylesheet" type="text/css" href="abc.css" />
+            <h1>Register</h1>
+            <p>Please fill in this form</p>
+            <hr />
+
+            <label for="name"><b>Name</b></label>
+            <input type="text" placeholder="Enter Name" name="name" required />
+
+            <label for="ssn"><b>SSN</b></label>
+            <input type="text" placeholder="Enter SSN" name="ssn" required />
+
+            <select name="gender" id="deptselector2">
+                <label>Gender</label>
+                <option value="m">Male</option>
+                <option value="f">Female</option>
+            </select>
+            <br /><br />
+
+            <label for="salary"><b>Salary</b></label>
+            <input type="number" placeholder="Enter Salary" name="salary" required />
+
+            <br /><br />
+
+            <label for="designation"><b>Select Designation</b></label><br /><br />
+            <select name="designation" id="deptselector">
+                Department
+                <option value="manager">Manager</option>
+                <option value="analyst">Analyst</option>
+                <option value="jun. manager" selected>Junior Manager</option>
+            </select>
+            <br /><br />
+            <label for="dept"><b>Select Department</b></label><br /><br />
+            <select name="dept" id="deptselector">
+                Department
+                <option value="production">Production</option>
+                <option value="sales">Sales</option>
+                <option value="market" selected>Market</option>
+                <option value="it">IT</option>
+            </select>
+            <br /><br />
+
+
+            <br /><br />
+
+            <hr />
+
+            <button type="submit" class="registerbtn">Register</button>
+        </div>
+    </form>
+</body>
+
+</html>

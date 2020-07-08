@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Register</title>
+</head>
+
+<body>
+    <form method="POST" action="http://127.0.0.1:3000/create">
+        <div class="container">
+            <link rel="stylesheet" type="text/css" href="abc.css" />
+            <h1>Register</h1>
+            <p>Please fill in this form</p>
+            <hr />
+
+            <label for="name"><b>Name</b></label>
+            <input type="text" placeholder="Enter Name" name="name" required />
+
+            <label for="usn"><b>USN</b></label>
+            <input type="text" placeholder="Enter USN" name="usn" required />
+
+            <label for="attendance"><b>Attendance</b></label>
+            <input type="number" placeholder="Enter Attendance" name="attendance" required />
+
+            <label for="cie"><b>CIE Marks</b></label>
+            <input type="number" placeholder="Enter Marks" name="cie" required />
+
+            <br /><br />
+            <label for="dept"><b>School of</b></label><br /><br />
+            <select name="dept" id="deptselector">
+                Department
+                <option value="cs">Computer Science and Engineering</option>
+                <option value="ec">Electronics and Communication Engineering</option>
+                <option value="mech" selected>Mechanical Engineering</option>
+                <option value="ar">Automation And Robotics Engineering</option>
+                <option value="civil">Civil Engineering</option>
+            </select>
+            <br /><br />
+
+
+            <br /><br />
+
+            <hr />
+
+            <button type="submit" class="registerbtn">Register</button>
+        </div>
+    </form>
+</body>
+
+</html>
